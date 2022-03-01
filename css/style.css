@@ -37,6 +37,10 @@
 ul {
   list-style: none;
 }
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 /* Header */
 .header {
@@ -125,14 +129,22 @@ a {
 }
 
 /* Section */
-.container .section-title {
+.section.features,
+.section.work {
+  margin-bottom: 94px;
+}
+.section-title.only {
   color: var(--hide);
-  margin-bottom: 0px;
+  margin-bottom: 94px;
   line-height: 0px;
 }
 .section-title {
   color: var(--title-text-color);
   margin-top: 0px;
+  text-align: center;
+}
+.work-list {
+  padding-left: 0px;
 }
 
 h2 {
@@ -143,28 +155,30 @@ h2 {
 
 /* Features */
 .features-list {
-  margin-top: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 .features-list .title {
   color: var(--title-text-color);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.features-list .title {
   font-weight: 700;
   font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 /* Staff */
-.section-staff {
+.section.staff {
   background-color: var(--staff-bdrcolor);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.staff-name .name {
-  color: var(--title-text-color);
+.staff-name {
+  padding-left: 0px;
 }
 
 .staff-name .name {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -188,6 +202,13 @@ h2 {
 .page-footer .info:hover,
 .page-footer .info:focus {
   color: var(--accent-color);
+}
+.staff-name img {
+  margin-bottom: 26px;
+}
+.staff-name .name {
+  margin-top: 0px;
+  margin-bottom: 14px;
 }
 
 .page-footer .info {
