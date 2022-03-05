@@ -80,16 +80,22 @@ p {
   margin-top: 24px;
   margin-bottom: 25px;
 }
+.link-list,
+.contact {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.link-list li,
+.contact li {
+  outline: 1px solid tomato;
+}
 .site-nav .link {
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-}
-.link-list {
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Contact */
