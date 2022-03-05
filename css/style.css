@@ -5,6 +5,7 @@
 /* основной фон страницы background: #FFFFFF; --primari-white-color */
 
 /* акцент background: #2196F3;--accent-color */
+/* ховер героя backgraund: #188CE8; --hover-button */
 
 /* фон героя и футер background: #2F303A; --hero-bgrcolor */
 /* фон команда background: #F5F4FA; --staff-bdrcolor */
@@ -21,6 +22,7 @@
   --staff-bdrcolor: #f5f4fa;
   --contact-footer: #ffffff99;
   --hide: #ffffff00;
+  --hover-button: #188ce8;
 }
 
 .page {
@@ -57,6 +59,7 @@ p {
 }
 /* Site-nav */
 .logo-accent {
+  margin-right: -4px;
   color: var(--accent-color);
 }
 .logo-black {
@@ -80,18 +83,39 @@ p {
   margin-top: 24px;
   margin-bottom: 25px;
 }
+.container.header {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 .link-list,
 .contact {
   display: flex;
   margin: 0px;
   padding: 0px;
 }
+.link-list {
+  margin-left: 93px;
+}
 .link-list li,
 .contact li {
+  padding-top: 32px;
+  padding-bottom: 32px;
   outline: 1px solid tomato;
+}
+.link-list .link,
+.contact .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link {
   color: var(--title-text-color);
+}
+.link-list li + li {
+  margin-left: 50px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -102,6 +126,12 @@ p {
 
 .contact .contact-link {
   color: var(--primari-text-color);
+}
+.contact li + li {
+  margin-left: 50px;
+}
+.contact {
+  margin-left: auto;
 }
 .contact .contact-link:hover,
 .contact .contact-link:focus {
@@ -219,9 +249,11 @@ h2 {
 }
 .page-footer .text-info {
   color: var(--primari-white-color);
+  font-style: normal;
 }
 .page-footer .info {
   color: var(--contact-footer);
+  font-style: normal;
 }
 .page-footer .info:hover,
 .page-footer .info:focus {
@@ -239,11 +271,15 @@ h2 {
 }
 
 /* Button */
+#studio {
+  color: var(--accent-color);
+}
+#portfolio {
+  color: var(--accent-color);
+}
 .button {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
-}
-.button {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -252,18 +288,14 @@ h2 {
   cursor: pointer;
   text-align: center;
 }
+.button:hover,
+.button:focus {
+  background-color: var(--hover-button);
+}
 
 .buttons {
   color: var(--title-text-color);
   background-color: var(--staff-bdrcolor);
-}
-.buttons:hover,
-.buttons:focus {
-  color: var(--primari-white-color);
-  background-color: var(--accent-color);
-}
-
-.buttons {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -272,12 +304,17 @@ h2 {
   cursor: pointer;
   text-align: center;
 }
+.buttons:hover,
+.buttons:focus {
+  color: var(--primari-white-color);
+  background-color: var(--accent-color);
+}
 
 /* PORTFOLIO */
 
 .project-name {
   color: var(--title-text-color);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   vertical-align: top;
@@ -292,7 +329,7 @@ h2 {
 
 .project-direction {
   color: var(--primari-text-color);
-  font-weight: 900;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
