@@ -104,7 +104,6 @@ p {
 .contact li {
   padding-top: 32px;
   padding-bottom: 32px;
-  outline: 1px solid tomato;
 }
 .link-list .link,
 .contact .contact-link {
@@ -197,6 +196,7 @@ h2 {
 
 /* Features */
 .features-list {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -208,12 +208,32 @@ h2 {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+.features-list li {
+  width: 270px;
+}
+
+/* Work */
+.work-list li {
+  display: inline-block;
+  margin-right: -3px;
+  padding-right: 0px;
+}
+.work-list li + li {
+  margin-left: 30px;
+}
 
 /* Staff */
 .section.staff {
   background-color: var(--staff-bdrcolor);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.staff-name li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.staff-name li + li {
+  margin-left: 30px;
 }
 .staff-name {
   padding-left: 0px;
