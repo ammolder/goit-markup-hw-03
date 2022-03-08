@@ -333,6 +333,8 @@ h2 {
 }
 
 .buttons {
+  height: 38px;
+
   color: var(--title-text-color);
   background-color: var(--staff-bdrcolor);
   font-weight: 500;
@@ -347,7 +349,22 @@ h2 {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
 }
-
+/* width buttons */
+.buttons .all {
+  width: 73px;
+}
+.buttons .web {
+  width: 128px;
+}
+.buttons .app {
+  width: 145px;
+}
+.buttons .design {
+  width: 103px;
+}
+.buttons .marketing {
+  width: 130px;
+}
 /* PORTFOLIO */
 
 .project-name {
@@ -383,6 +400,16 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+.project-list li {
+  width: calc((100%-60px) / 3);
+}
+.project-list li:not(:nth-of-type(3n)) {
+  margin-right: 30px;
+}
+.project-list li:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 /* Filter */
 .title-hide {
   color: var(--hide);
@@ -391,6 +418,9 @@ h2 {
   line-height: 0px;
 }
 .filter {
+  width: 611px;
+  height: 54px;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .project img {
@@ -401,4 +431,6 @@ h2 {
 }
 .buttons-filter {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
