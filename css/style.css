@@ -154,7 +154,7 @@ img {
 
 /* Contact */
 
-.contact .contact-link {
+.contact-link {
   color: var(--primari-text-color);
 }
 .contact li + li {
@@ -279,14 +279,12 @@ h2 {
 }
 .staff-name {
   display: flex;
-}
-.staff-name li + li {
-  margin-left: 30px;
-}
-.staff-name {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.staff-name li + li {
+  margin-left: 30px;
 }
 
 .staff-name .name {
@@ -318,13 +316,12 @@ h2 {
 .page-footer .text-info {
   color: var(--primari-white-color);
   font-style: normal;
+  line-height: 1.71;
 }
 .adress-list .info {
   color: var(--contact-footer);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
 }
 .adress-list .info:hover,
 .adress-list .info:focus {
@@ -397,12 +394,6 @@ h2 {
   width: 611px;
   height: 54px;
   margin: 94px auto 34px;
-}
-.container .title-hide {
-  color: var(--hide);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 0px;
 }
 .project img {
   margin-bottom: 20px;
