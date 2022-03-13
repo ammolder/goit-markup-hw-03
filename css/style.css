@@ -12,8 +12,7 @@
 /* фон команда background: #F5F4FA; --staff-bdrcolor */
 
 /* контакты в футере background: #FFFFFF99;   rgba(0, 0, 0, 0.6); --contact-footer */
-/* заховати текст color: #ffffff00; rgba(0, 0, 0, 0); --hide */
-
+/* Border: #eeeeee; --border-box */
 :root {
   --title-text-color: #212121;
   --primari-text-color: #757575;
@@ -23,8 +22,8 @@
   --hero-bgrcolor: #2f303a;
   --staff-bdrcolor: #f5f4fa;
   --contact-footer: #ffffff99;
-  --hide: #ffffff00;
   --hover-button: #188ce8;
+  --border-box: #eeeeee;
 }
 
 .page {
@@ -53,6 +52,9 @@ img {
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid var(--border-box);
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -211,7 +213,8 @@ h2 {
 }
 
 /* Features */
-.section.features {
+.section.features,
+.section-project {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -311,7 +314,7 @@ h2 {
 
 .logo-footer {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 .page-footer .text-info {
   color: var(--primari-white-color);
@@ -355,7 +358,7 @@ h2 {
 }
 
 .buttons {
-  height: 38px;
+  padding: 0px 22px;
 
   color: var(--title-text-color);
   background-color: var(--staff-bdrcolor);
@@ -371,22 +374,6 @@ h2 {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
 }
-/* width buttons */
-.buttons.all {
-  width: 73px;
-}
-.buttons.web {
-  width: 128px;
-}
-.buttons.app {
-  width: 145px;
-}
-.buttons.design {
-  width: 103px;
-}
-.buttons.marketing {
-  width: 130px;
-}
 /* PORTFOLIO */
 /* Filter */
 
@@ -395,24 +382,22 @@ h2 {
   height: 54px;
   margin: 94px auto 34px;
 }
-.project img {
-  margin-bottom: 20px;
-}
 .project {
   margin-bottom: 94px;
 }
 .buttons-filter {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.buttons-filter li + li {
+  margin-left: 30px;
 }
 
 /* Project */
 .text-box {
-  width: 322px;
-  height: 70px;
-  margin: 0 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--border-box);
 }
 .project-name {
   color: var(--title-text-color);
